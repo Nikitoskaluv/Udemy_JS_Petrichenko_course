@@ -36,8 +36,11 @@
 // wrapper.insertBefore(neededButton4, hearts[0]);
 
 
-function vaporcode(string) {
-    return string.toUpperCase().split(" ").join("").split("").join("  ");
-}
+// function vaporcode(string) {
+//     return string.toUpperCase().split(" ").join("").split("").join("  ");
+// }
 
-console.log(vaporcode('HELLO hello'));
+// console.log(vaporcode('HELLO hello'));
+
+let powersOfTwo = n => n ? [...powersOfTwo(n - 1), 2 ** n] : [1];
+console.log(powersOfTwo(4));
